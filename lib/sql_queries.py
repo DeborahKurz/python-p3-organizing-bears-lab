@@ -32,8 +32,8 @@ select_oldest_bear_and_returns_name_and_age = """
 """
 select_youngest_bear_and_returns_name_and_age = """
     SELECT
-        name,
-        age
+        bears.name,
+        bears.age
     FROM bears
     ORDER BY age ASC
     LIMIT 1;
